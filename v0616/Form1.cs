@@ -40,19 +40,19 @@ namespace v0616
 
             if (label1.Left < 0)
             {
-                vx = Math.Abs(vx);
+                vx = Math.Abs(vx) * 110 / 100;
             }
             if (label1.Right > ClientSize.Width)
             {
-                vx = -Math.Abs(vx);
+                vx = -Math.Abs(vx) * 110 / 100;
             }
             if (label1.Top < 0)
             {
-                vy = Math.Abs(vy);
+                vy = Math.Abs(vy) * 110 / 100;
             }
             if (label1.Bottom > ClientSize.Height)
             {
-                vy = -Math.Abs(vy);
+                vy = -Math.Abs(vy) * 110 / 100;
             }
 
             string t = label1.Text;
